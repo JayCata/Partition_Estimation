@@ -383,7 +383,7 @@ for (j, group_num) in enumerate(unique(best_joined_groups)[group_convert])
     Plots.plot!(time_vec, β_j[group_num, :]; yerror =  ci_len, label = "Group $(j)", markerstrokecolor=:auto, linestyle = :dash, marker=(:circle,5), dpi=600) 
     push!(group_cis, ci_len)
 end
-title!("TWFE by Group")
+
 ylabel!("βⱼₜ", fontsize = 40)
 xlabel!("Period")
 group_plot
@@ -453,7 +453,7 @@ for (j, group_num) in enumerate(unique(best_joined_groups)[group_convert])
 end
 
 
-title!("TWFE by Selected Group and Aggregates")
+
 ylabel!("βⱼₜ", fontsize = 40)
 xlabel!("Period")
 
